@@ -1,11 +1,22 @@
 {
   "name": "@myuon/pulumi-extra",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "myuon <ioi.joi.koi.loi@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@pulumi/aws": "^0.18.26",
     "@pulumi/pulumi": "^0.17.28"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3"
   }
 }
