@@ -1,4 +1,5 @@
-import "src/appsync";
-import "src/dynamodb_sns";
-import "src/lambda";
-import "src/subscription";
+import * as appsync from "./src/appsync";
+import * as dynamodb_sns from "./src/dynamodb_sns";
+import * as lambda from "./src/lambda";
+import * as subscription from "./src/subscription";
+export { appsync, dynamodb_sns, lambda, subscription };
