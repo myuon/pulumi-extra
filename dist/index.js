@@ -9,6 +9,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var appsync = __importStar(require("./src/appsync"));
 exports.appsync = appsync;
+var apigateway = __importStar(require("./src/apigateway"));
+exports.apigateway = apigateway;
 var dynamodb_sns = __importStar(require("./src/dynamodb_sns"));
 exports.dynamodb_sns = dynamodb_sns;
 var lambda = __importStar(require("./src/lambda"));
